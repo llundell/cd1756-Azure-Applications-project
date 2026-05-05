@@ -124,7 +124,7 @@ def _load_cache():
     cache = msal.SerializableTokenCache()
     if session.get('token_cache'):
         cache.deserialize(session['token_cache'])
-        return cache
+    return cache
 
 def _save_cache(cache):
     # DONE: Save the cache, if it has changed
